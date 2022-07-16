@@ -13,27 +13,108 @@
   <head>
   <body>
     <header id="header">
-      <nav id="nav-bar" class="navbar">
+      <nav id="nav-bar" class="navbar p-3">
          <div class="container-fluid">
             <a class="navbar-brand me-auto" href="#">
             <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"  height="24" id="header-img">
             </a>
             <a class="nav-link mx-3" id="nav-link" href="#features">Features</a>
-            <a class="nav-link mx-3" id="nav-link" href="#">How It Works</a>
-            <a class="nav-link mx-3" id="nav-link" href="#">Pricing </a>
+            <a class="nav-link mx-3" id="nav-link" href="#howItWorks">How It Works</a>
+            <a class="nav-link mx-3" id="nav-link" href="#pricing">Pricing </a>
          </div>
       </nav>
     </header>
-    <section class="text-center">
+    <section class="text-center pb-3">
       <h4>Handcrafted, home-made masterpieces</h4>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email" id="email"placeholder="Enter your email address" class="px-1 m-3"><br>
         <input type="submit" id="submit" value="GET STARTED" class="p-2">
       </form>
     </section>
-    <section id="features">
-      
+    <section id="features" class="container mt-5 pt-5">
+      <div class="row justify-content-center mb-4">
+        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg"  height="60" fill="orange" class="bi bi-fire" viewBox="0 0 16 16">
+          <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+        </svg></div>
+        <div class="col ps-5">
+          <h4>Premium Materials</h4>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" height="60" fill="orange" class="bi bi-truck" viewBox="0 0 16 16">
+          <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg></div>
+        <div class="col ps-5">
+          <h4>Fast Shipping</h4>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-4">
+        <div class="col-1"><svg xmlns="http://www.w3.org/2000/svg" height="60" fill="orange" class="bi bi-battery-full" viewBox="0 0 16 16">
+          <path d="M2 6h10v4H2V6z"/>
+          <path d="M2 4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2zm10 1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h10zm4 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/>
+        </svg></div>
+        <div class="col ps-5">
+          <h4>Quality Assurance</h4>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </div>
     </section>
+
+    <section id="howItWorks" class="container text-center mt-3 mb-5">
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    
+    <section id="pricing"  class="container d-md-flex justify-content-evenly text-center">
+      <div class="card mb-3" style="max-width: 20rem;">
+        <h5 class="card-header px-4">TENOR TROMBONE</h5>
+        <div class="card-body">
+          <h4 class="card-title">$600</h4>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum dolor.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <button type="button" class="btn btn-warning">Select</button>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 20rem;">
+        <h5 class="card-header px-4">BASS TROMBONE</h5>
+        <div class="card-body">
+          <h4 class="card-title">$900</h4>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum dolor.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <button type="button" class="btn btn-warning">Select</button>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 20rem;">
+        <h5 class="card-header px-4">VALVE TROMBONE</h5>
+        <div class="card-body">
+          <h4 class="card-title">$1200</h4>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <p class="card-text">Lorem ipsum dolor.</p>
+          <p class="card-text">Lorem ipsum.</p>
+          <button type="button" class="btn btn-warning">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container text-end bg-light mb-0 p-2 pb-1">
+      <div class="row">
+        <p class="col-8"></p>
+        <p class="col">Privacy</p>
+        <p class="col">Terms</p>
+        <p class="col">Contact</p>
+        <p class="col-12">Copyright 2016, Original Trombones</p>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
